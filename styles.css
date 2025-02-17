@@ -1,1 +1,11 @@
 /*  your css code here. If applicable */
+function getDomLevel(element){
+	let level = 0;
+	while(element){
+		level++;
+		element = element.parentElement
+	}
+	return level
+	
+}
+const targetElement = document.getElementById("level");
